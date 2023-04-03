@@ -1,5 +1,10 @@
 ## A `scrollend` Explainer
 
+Update April 3, 2023:  
+This is now on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/scrollend_event) and shipping in browsers:
+- Firefox 109
+- Chrome 114
+
 ### Problem Statement
 Web developers often watch scroll events to synchronize ancillary elements, fetch data, trigger animations, and more. Today watching scroll events is done with the [`scroll`](https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event) event. But if developers want to know when scroll has ended, or rested and isn't moving anymore, there currently is no event. To work around this, developers set a timeout and/or check scroll positions, to [attempt an estimated scrollend event](https://gomakethings.com/detecting-when-a-visitor-has-stopped-scrolling-with-vanilla-javascript/), like so:
 
